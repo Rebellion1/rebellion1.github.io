@@ -1,0 +1,102 @@
+body{
+    background-color:#0a0a0a;
+    color:rgb(255, 255, 255);
+    user-select: none;
+}
+.welcomeText{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: pre-line;
+    margin-top: 10%;
+
+}
+.heading{
+    font-size: 150px;
+}
+.navBar{
+    position: fixed;
+    top: -25px;
+    left: -20px;
+    height: 2.5em;
+    width: 100%;
+    background-color: #1b1b1d;
+    padding: 30px;
+    animation-name: in;
+    animation-duration: 500ms;
+}
+.navBar:hover{
+    animation-name: out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards, ease-in-out;
+}
+@keyframes out {
+    from  {top: -25px; height: 2.5em;}
+    to {height: 5.5em;}
+  }
+@keyframes in {
+    from  {top: -25px; height: 5.5em;}
+    to {height: 2.5em;}
+  }
+::-webkit-scrollbar{
+    border-radius: 10px;
+    
+    background-color: #111113;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #222225;
+}
+.searchbox {
+
+    position: fixed;
+    width: 250px;
+    height: 25;
+    top: 2em;
+    left: 1000px;
+    
+    background-color: rgb(41, 41, 41);
+    border: red 3px;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+.searchbutton {
+    position: fixed;
+    top: 2em;
+    left: 1260px;
+    height: 5px;
+    width: 70px;
+    background-color: #2e2e2e;
+    padding: 12px;
+    border: 0px;
+}
+.homeButton {
+    position: fixed;
+    top: 2em;
+    left: 60px;
+    height: 5px;
+    width: 70px;
+    background-color: #2e2e2e;
+    padding: 12px;
+    border: 0px;
+}
+.moreButton {
+    position: fixed;
+    top: 2em;
+    left: 140px;
+    height: 5px;
+    width: 70px;
+    background-color: #2e2e2e;
+    padding: 12px;
+    border: 0px;
+}
+.randomText {
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    translate: -50%;
+    word-wrap: break-word;
+    white-space: pre-line;
+    /*
+        This is just some random text, it probably shouldn't be here.
+    */
+}
